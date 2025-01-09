@@ -1,0 +1,6 @@
+/vendor/
+composer.lock
+phpstan.neon.dist
+phpstan-baseline.neon
+.idea/
+.vscode/
