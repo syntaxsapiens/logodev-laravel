@@ -1,8 +1,8 @@
 # Logo.Dev Laravel package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/syntaxsapiens/logodev-laravel.svg?style=flat-square)](https://packagist.org/packages/syntaxsapiens/logodev-laravel)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/syntaxsapiens/logodev-laravel/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/syntaxsapiens/logodev-laravel/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/syntaxsapiens/logodev-laravel/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/syntaxsapiens/logodev-laravel/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Pest Tests](https://github.com/syntaxsapiens/logodev-laravel/actions/workflows/run-tests.yml/badge.svg)](https://github.com/syntaxsapiens/logodev-laravel/actions/workflows/run-tests.yml)
+[![PHPStan Level 5](https://github.com/syntaxsapiens/logodev-laravel/actions/workflows/phpstan.yml/badge.svg)](https://github.com/syntaxsapiens/logodev-laravel/actions/workflows/phpstan.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/syntaxsapiens/logodev-laravel.svg?style=flat-square)](https://packagist.org/packages/syntaxsapiens/logodev-laravel)
 
 This Laravel package provides simple methods for interacting with the [Logo.dev](https://www.logo.dev/) API. Logo.dev is an attribution-based freemium API, for more information please visit <https://www.logo.dev/pricing>.
