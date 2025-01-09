@@ -1,24 +1,24 @@
 name: Run Tests
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: ['push', 'pull_request']
 
 jobs:
-  tests:
+  ci:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up PHP
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.2
-          tools: composer
+          tools: composer:v2
+          coverage: xdebug
+
       - name: Install Dependencies
-        run: composer install
-      - name: Run Tests
-        run: vendor/bin/pest
+        run: composer install --no-interaction --prefer-dist --optimize-autoloader
+
+      - name: Tests
+        run: ./vendor/bin/pest --ci
