@@ -17,6 +17,6 @@ class LogoDevServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/logodev.php' => config_path('logodev.php'),
-        ]);
+        ], 'logodev-laravel-config');
     }
 }
