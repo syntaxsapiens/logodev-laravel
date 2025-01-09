@@ -28,5 +28,4 @@ jobs:
         run: composer install --no-interaction --prefer-dist --no-scripts
 
       - name: Run Tests
-        working-directory: packages/syntaxsapiens/logodev-laravel
         run: vendor/bin/pest
