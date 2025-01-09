@@ -1,4 +1,4 @@
-# Unofficial Logo.Dev Laravel package
+# Logo.Dev Laravel package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/syntaxsapiens/logodev-laravel.svg?style=flat-square)](https://packagist.org/packages/syntaxsapiens/logodev-laravel)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/syntaxsapiens/logodev-laravel/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/syntaxsapiens/logodev-laravel/actions?query=workflow%3Arun-tests+branch%3Amain)
