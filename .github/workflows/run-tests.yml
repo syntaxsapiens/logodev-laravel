@@ -1,24 +1,32 @@
 name: Run Tests
 
-on: ['push', 'pull_request']
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  ci:
+  tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup PHP
+      - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.2
-          tools: composer:v2
-          coverage: xdebug
+          tools: composer
 
-      - name: Install Dependencies
-        run: composer install --no-interaction --prefer-dist --optimize-autoloader
+      - name: Clear Composer Cache
+        run: composer clear-cache
 
-      - name: Tests
-        run: ./vendor/bin/pest --ci
+      - name: Install Composer Dependencies
+        run: composer install --no-interaction --prefer-dist --no-scripts
+
+      - name: Run Tests
+        working-directory: packages/syntaxsapiens/logodev-laravel
+        run: vendor/bin/pest
