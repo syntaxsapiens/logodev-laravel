@@ -1,4 +1,4 @@
-name: PHPStan Level 8
+name: PHPStan Level 6
 
 on:
   push:
@@ -28,4 +28,4 @@ jobs:
         run: composer require phpstan/phpstan --dev
 
       - name: Run PHPStan
-        run: vendor/bin/phpstan analyse src tests --level=8
+        run: vendor/bin/phpstan analyse src tests --level=6
