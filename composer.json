@@ -1,6 +1,5 @@
 {
     "name": "syntaxsapiens/logodev-laravel",
-    "version": "1.0.0",
     "description": "A Laravel package that simplifies interaction with the Logo.dev API.",
     "keywords": [
         "syntaxsapiens",
